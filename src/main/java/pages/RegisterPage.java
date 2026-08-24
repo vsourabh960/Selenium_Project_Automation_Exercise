@@ -9,7 +9,7 @@ import base.BasePage;
 public class RegisterPage extends BasePage{
 	
 	private By accountInfoText = By.xpath("//b[text()='Enter Account Information']");
-	private By checkBoxM  = By.xpath("//label[contains(normalize-space(),'Mr.')]"); // //span[normalize-space(text())='Mr.']
+	private By checkBoxM  = By.xpath("//label[contains(normalize-space(),'Mr.')]"); 
 	private By checkBoxF  = By.xpath("//label[contains(normalize-space(),'Mrs.')]");
 	private By password = By.id("password");
 	private By days = By.id("days");
@@ -38,8 +38,9 @@ public class RegisterPage extends BasePage{
 		return isDisplayed(accountInfoText);
 	}
 	
+	// Fixed: Changed == to .equals() for proper string comparison
 	public void clickMaleOrFemale(String gender) {
-		if(gender == "Male") {
+		if("Male".equals(gender)) {
 			click(checkBoxM);
 		} else {
 			click(checkBoxF);
@@ -52,15 +53,16 @@ public class RegisterPage extends BasePage{
 		click(specialOffer);
 	}
 	
+	// Fixed: Now uses the actual parameters instead of hardcoded values
 	public void enterDOB(String day, String month, String year) {
 		Select selectDay = new Select(selectDropdown(days));
-		selectDay.selectByVisibleText("1");
+		selectDay.selectByVisibleText(day);
 		
 		Select selectMonth = new Select(selectDropdown(months));
-		selectMonth.selectByVisibleText("June");
+		selectMonth.selectByVisibleText(month);
 		
 		Select selectYear = new Select(selectDropdown(years));
-		selectYear.selectByVisibleText("2000");
+		selectYear.selectByVisibleText(year);
 	}
 	
 	public void addressInformation(String fName, String lName, String company, String address,

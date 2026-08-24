@@ -1,1 +1,21 @@
-<!-- -->
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Selenium Automation Suite" parallel="false">
+    <test name="Login Tests">
+        <classes>
+            <class name="tests.LoginWithCorrectDetailsTest" />
+            <class name="tests.LoginWithIncorrectDetailsTest" />
+        </classes>
+    </test>
+    
+    <test name="Registration Tests">
+        <classes>
+            <class name="tests.RegisterTest" />
+        </classes>
+    </test>
+    
+    <test name="Logout Tests">
+        <classes>
+            <class name="tests.LogoutUserTest" />
+        </classes>
+    </test>
+</suite>
