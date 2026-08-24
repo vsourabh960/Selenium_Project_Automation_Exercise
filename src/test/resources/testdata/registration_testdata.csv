@@ -1,0 +1,4 @@
+email,name,firstName,lastName,company,address,country,state,city,zipcode,mobileNumber,day,month,year,password
+testuser1@gmail.com,John,John,Doe,Infosys,123 Main St,India,Maharashtra,Pune,400511,9876543210,1,January,2000,TestPass123
+testuser2@gmail.com,Jane,Jane,Smith,TCS,456 Oak Ave,United States,California,San Francisco,94105,5551234567,15,June,1995,SecurePass456
+testuser3@gmail.com,Alex,Alex,Johnson,Wipro,789 Pine Rd,United Kingdom,England,London,SW1A1AA,7911223344,10,March,2001,MyPassword789

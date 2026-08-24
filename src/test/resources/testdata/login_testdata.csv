@@ -1,0 +1,5 @@
+email,password,isValidLogin,expectedMessage
+rituchadar312@gmail.com,saurabh,true,Account Successfully Created!
+testcase1233@gmail.com,saurabh,true,Account Successfully Created!
+invalidemail@gmail.com,wrongpassword,false,Your email or password is incorrect!
+emptytest@gmail.com,,false,Your email or password is incorrect!
